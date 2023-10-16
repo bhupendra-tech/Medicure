@@ -1,0 +1,92 @@
+@ We will send JSON rather than rendering the page with list i.e. suppose when a user signIn successfully we will res.render him home page and on home page we will use a fetch api to populate the page 
+
+@ Request endpoint/url : request type (get,post) : request sended by
+
+# Index
+/index.html : get : index.html : browser
+
+# Sign In
+/v1/signIn : post : error : fetch
+
+# Sign Up 
+/v1/signUp : post : render, redirect, error : fetch 
+
+# About Us 
+/v1/aboutUs : get : aboutUs.html : browser
+
+# Home
+/v1/home : get : home.html : browser 
+/v1/medicinesList/num=6 : get : JSON : fetch
+/v1/exercisesList/num=6 : get : JSON : fetch
+/v1/musicList/num=6 : get : JSON : fetch
+
+# Medicines 
+/v1/medicines : get : medicines.html : browser
+/v1/medicinesList/num=all : get : JSON : fetch 
+
+# Medicine Page 
+/v1/medicine/id: : get : medicinePage.html : browser
+/v1/medicine/id: : get : JSON : fetch 
+
+# Exercises 
+/v1/exercises : get : exercise.html : browser
+/v1/exercisesList/num=6 : get : JSON : fetch 
+ 
+# Exercise Page 
+/v1/exercise/id: : get : exercise.html : browser
+/v1/exercise/id: : get : JSON : fetch 
+
+# Music Category Page : get : musicCategory.html : browser
+/v1/musicCategory/category:/num=2 : get : JSON : fetch 
+
+# Music 
+/v1/musicCategory/category: : get : JSON : browser 
+/v1/musicCategory/category:/num:all : get : JSON : fetch
+
+# Music Player 
+/v1/musicPLayer : get : musicPlayer.html : browser
+/v1/musicCategory/category:/id: get : JSON : fetch 
+
+# Search 
+/v1/search : get : search.html : browser 
+/v1/search/query : : get : JSON : fetch 
+
+# Space  
+/v1/space : get : space.html : browser 
+
+# Dashboard 
+/v1/dashboard : get : dashboard.html : browser 
+
+# Analytics 
+/v1/analytics : get : analytics.html : browser 
+
+# Today's Report
+/v1/todaysReport : get : todaysReport.html : browser 
+/v1/todaysReport/id: : get : data : fetch 
+
+# Time Spent 
+/v1/timeSpent : get : timeSpent.html : browser
+/v1/timeSpent/id: get : data : fetch 
+
+# Exercise Report 
+/v1/exerciseReport : get : exerciseReport.html : browser 
+/v1/exerciseReport : get : data : fetch 
+
+# Favorites
+/v1/favorites : get : favorites.html : browser 
+/v1/favorites/id: get : JSON : browser 
+
+# Notification 
+/v1/notification : get : notification.html : browser
+/v1/notification/id: get : JSON : fetch 
+
+# Support :
+/v1/support : get : support.html : browser 
+
+# To Do List 
+/v1/toDoList : get : toDoList.html : browser
+/v1/toDoList/id: get :JSON : fetch 
+
+# Profile 
+/v1/profile : get : profile.html : browser 
+/v1/profile.html/id: get : JSON : fetch 
