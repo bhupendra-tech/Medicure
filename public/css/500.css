@@ -1,0 +1,37 @@
+#internalServerContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  #internalServerNumber {
+    color: var(--primaryColor);
+    margin: 0.5rem;
+  }
+  #internalServerHeader,
+  .internalServerSubHeading {
+    margin: 0.5rem;
+    color: var(--black75);
+  }
+  .listItem {
+    text-align: center;
+    color: var(--black50);
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+  .otherPageBtn {
+    background-color: var(--primaryColor);
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10rem;
+    color: var(--greenishWhite);
+    margin: 0.5rem 0;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+  }
+  

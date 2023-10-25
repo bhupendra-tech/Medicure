@@ -1,0 +1,14 @@
+Data from user  : 
+const data = {
+    category : enums
+    num : 6/all
+}
+
+Data to user  :
+
+const Data = {
+    {
+        img : String
+        isFavorite : bool 
+    }
+}

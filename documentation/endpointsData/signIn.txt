@@ -1,0 +1,18 @@
+Data from user : 
+
+const data = {
+    userEmail : userEmaiail@gmail.com,
+    userPassword : userPassword 
+}   
+
+
+Data To User 
+
+# In case of Error 
+const data = {
+    status : statusCode ; 
+    msg : "Error Message "
+}
+
+# In case of success 
+server will render a home.html 

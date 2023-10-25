@@ -1,0 +1,51 @@
+.pageHeader {
+  margin-top: 2rem;
+  text-align: center;
+}
+.outline {
+  height: 0.1rem;
+  width: 10rem;
+  background-color: var(--secondaryColor);
+  margin: 0 auto;
+}
+.grid-box {
+  padding: 0 3rem;
+  margin: 4rem 0;
+  display: grid;
+  justify-content: center;
+  gap: 4rem;
+  /* 282.5 346.2  this is the best size we found*/
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-template-rows: 346px;
+}
+.pageCard {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--greenishWhite);
+  /* aspect-ratio: 1/1; */
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.pageCardImg {
+  width: 100%;
+  filter: brightness(0.8);
+}
+.pageCardBlock {
+  width: 100%;
+  padding: 1rem;
+}
+.nameOfItem {
+  color: var(--black75);
+}
+.descriptionOfItem {
+  max-height: 2.5rem;
+  color: var(--black25);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pageCardButtonBlock {
+  display: flex;
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+  justify-content: space-between;
+}

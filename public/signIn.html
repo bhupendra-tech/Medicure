@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/projectStyles.css" />
+    <link rel="stylesheet" href="./css/menu1.css">
+  </head>
+  <body>
+    <div id="navbar">
+        <div id="logo"><img src="./imgs/svg/Medicure.svg" alt="" /></div>
+    </div>
+  </body>
+    <div class="form-container">
+      <form class="form">
+        <h5 class="form-header">Sign in to your account</h5>
+        <div class="form-row">
+          <label for="userEmail" class="form-label"><h6>Email</h6></label>
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            class="form-input"
+            required
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-row">
+          <label for="userPassword" class="form-label"><h6>Password</h6></label>
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            class="form-input"
+            required
+            placeholder="Minimum length is 8 characters"
+          />
+        </div>
+        <div class="subText errorMessage" id="userResponseMessage"></div>
+        <button type="submit" class="btn btn-with-icon btn-block">
+          <h6>Sign In</h6>
+          <img src="./imgs/svg/arrow_forward.svg" alt="forward arrow" />
+        </button>
+        <p class="accountSubText">
+          Don't have an account? <a href="./login.html">Create one</a>
+        </p>
+        <p class="passwordSubText">
+          <a href="#">
+            Forgot your password?
+          </a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

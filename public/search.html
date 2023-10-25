@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/projectStyles.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+  </head>
+  <body>
+    <div id="outerContainer">
+      <div id="navbar">
+        <div id="navCard">
+          <div id="logoAndIcon">
+            <img id="logo" src="./imgs/svg/Medicure.svg" alt="medicure" />
+            <img id="hamburgerIcon" src="./imgs/svg/menu.svg" alt="menu" />
+            <img id="closeIcon" src="./imgs/svg/close.svg" alt="close" />
+          </div>
+          <div>
+            <a class="navItems active" href="#">
+              <img src="./imgs/svg/icons_unfilled/home.svg" alt="" />
+              <h6>Home</h6>
+            </a>
+            <a class="navItems" href="#">
+              <img src="./imgs/svg/icons_unfilled/medicines.svg" alt="" />
+              <h6>Medicines</h6>
+            </a>
+            <a class="navItems" href="#">
+              <img src="./imgs/svg/icons_unfilled/exercise.svg" alt="" />
+              <h6>Exercises</h6>
+            </a>
+            <a class="navItems" href="#">
+              <img src="./imgs/svg/icons_unfilled/music.svg" alt="" />
+              <h6>Music</h6>
+            </a>
+            <a class="navItems" href="#">
+              <img src="./imgs/svg/icons_unfilled/search.svg" alt="" />
+              <h6>Search</h6>
+            </a>
+          </div>
+          <div>
+            <hr id="horizontalLine" />
+            <a class="navItems" href="#">
+              <img src="./imgs/svg/icons_unfilled/space.svg" alt="" />
+              <h6>Space</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div id="subContainer">
+          <input
+            type="text"
+            name="searchQuery"
+            id="searchBox"
+            placeholder="Search"
+          />
+          <img src="./imgs/svg/icons_unfilled/search.svg" id="searchIcon" />
+        </div>
+        <div id="searchResult">
+          <div id="searchMessage">
+            <h1>No Result Found</h1>
+          </div>
+          <div id="searchResultBox">
+            <div class="searchCard">
+              <img
+                class="searchCardImg"
+                src="./imgs/jpeg/test_medicine.jpeg"
+                alt=""
+              />
+              <div class="searchCardBlock">
+                <h6 class="nameOfItem">HALDI</h6>
+                <p class="descriptionOfItem">
+                  Haldi is a quite efficient medicine in treating
+                </p>
+              </div>
+              <div class="searchCardButtonBlock">
+                <button class="btn btn-without-icon">View More</button>
+                <button class="icon-btn btn">
+                  <img src="./imgs/svg/favorite_unfilled.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="searchCard">
+              <img
+                class="searchCardImg"
+                src="./imgs/jpeg/test_medicine.jpeg"
+                alt=""
+              />
+              <div class="searchCardBlock">
+                <h6 class="nameOfItem">HALDI</h6>
+                <p class="descriptionOfItem">
+                  Haldi is a quite efficient medicine in treating
+                </p>
+              </div>
+              <div class="searchCardButtonBlock">
+                <button class="btn btn-without-icon">View More</button>
+                <button class="icon-btn btn">
+                  <img src="./imgs/svg/favorite_unfilled.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="searchCard">
+              <img
+                class="searchCardImg"
+                src="./imgs/jpeg/test_medicine.jpeg"
+                alt=""
+              />
+              <div class="searchCardBlock">
+                <h6 class="nameOfItem">HALDI</h6>
+                <p class="descriptionOfItem">
+                  Haldi is a quite efficient medicine in treating
+                </p>
+              </div>
+              <div class="searchCardButtonBlock">
+                <button class="btn btn-without-icon">View More</button>
+                <button class="icon-btn btn">
+                  <img src="./imgs/svg/favorite_unfilled.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript/search.js"></script>
+</html>

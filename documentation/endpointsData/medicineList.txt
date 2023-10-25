@@ -1,0 +1,28 @@
+// this applies to all medicinesList exerciseList  musicList
+Data from user  : 
+const data = {
+    num : 6/all
+}
+
+Data To user 
+
+const list = {
+    {
+        nameOfMedicine : String
+        isFavorite : bool
+        img : String 
+        description : String 
+    },
+    {
+        nameOfMedicine : String
+        isFavorite : bool
+        img : String 
+        description : String 
+    },
+    {
+        nameOfMedicine : String
+        isFavorite : bool
+        img : String 
+        description : String 
+    },
+}

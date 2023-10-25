@@ -1,0 +1,48 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  background-color: var(--greenishWhite);
+}
+#navItems {
+  display: flex;
+  justify-content: space-between;
+}
+.navItem {
+  text-decoration: none;
+  color: var(--black75);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 600px) {
+  #hamburgerIcon,
+  #closeIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: flex-start;
+  }
+  #logoAndIcon {
+    display: flex;
+    justify-content: space-between;
+  }
+  #navItems {
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .navItem {
+    margin: 1rem 0;
+  }
+  #closeIcon {
+    display: none;
+  }
+}

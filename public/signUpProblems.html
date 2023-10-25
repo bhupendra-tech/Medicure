@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More about you</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/projectStyles.css" />
+    <link rel="stylesheet" href="./css/menu1.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logo"><img src="./imgs/svg/Medicure.svg" alt="" /></div>
+    </div>
+    <div class="form-container">
+      <form class="form">
+        <h5 class="form-header">Something about you</h5>
+        <div class="form-row">
+          <label for="userProblems" class="form-label"><h6>Problems</h6></label>
+          <textarea
+            class="form-input form-textarea"
+            name="userProblems"
+            placeholder="Problems should be comma(,) seprated example : cough, cold"
+          ></textarea>
+        </div>
+        <div class="subText errorMessage" id="userResponseMessage"></div>
+        <button type="submit" class="btn btn-with-icon btn-block">
+          <h6>Finish</h6>
+          <img src="./imgs/svg/arrow_forward.svg" alt="forward arrow" />
+        </button>
+        <p class="accountSubText"></p>
+      </form>
+    </div>
+  </body>
+</html>

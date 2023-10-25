@@ -1,0 +1,217 @@
+:root {
+  --primaryColor: #208771;
+  --secondaryColor: #bdfdef;
+  --black: #202423;
+  --black75: #505957;
+  --black50: #73807d;
+  --black25: #73807d;
+  --black10: #95a6a2;
+  --black5: #b8ccc8;
+  --white: #f8fdfc;
+  --subtleWhite: #f2faf8;
+  --greenishWhite: #fafdfc;
+  --inputBoxColor: #daf2ed;
+  --successColor: #63d46f;
+  --errorColor: #ff7575;
+  --shadow: 0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02),
+    0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03),
+    0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04),
+    0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04),
+    0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--greenishWhite);
+  font-family: "Open sans";
+}
+h1 {
+  font-size: 4.209rem;
+  font-family: "Open sans";
+}
+h2 {
+  font-size: 3.15rem;
+  font-family: "Open sans";
+}
+h3 {
+  font-size: 2.369rem;
+  font-family: "Open sans";
+}
+h4 {
+  font-size: 1.777rem;
+  font-family: "Open sans";
+}
+h5 {
+  font-size: 1.333rem;
+  font-family: "Open sans";
+}
+h6 {
+  font-size: 1rem;
+  font-family: "Open sans";
+}
+p {
+  font-size: 1rem;
+  font-family: "karla";
+}
+.subText {
+  font-size: 0.75rem;
+  font-family: "karla";
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.488rem;
+  }
+  h2 {
+    font-size: 2.074rem;
+  }
+  h3 {
+    font-size: 1.728rem;
+  }
+  h4 {
+    font-size: 1.44rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .subText {
+    font-size: 0.833rem;
+  }
+}
+/* Forms */
+.form-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 4rem 3rem 1rem 3rem;
+  background-color: var(--bluishWhite);
+  width: 350px;
+}
+.form-header {
+  color: var(--black50);
+  margin-bottom: 1.5rem;
+}
+.form-row {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.form-label {
+  color: var(--black);
+}
+.form-input {
+  margin-top: 0.5rem;
+  background-color: var(--inputBoxColor);
+  border: none;
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+.form-input:focus {
+  border: none;
+}
+.form-input::placeholder,
+.form-textarea::placeholder {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--black25);
+}
+.form-select,
+.form-select option,
+.form-textarea {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--black25);
+}
+.form-textarea {
+  resize: none;
+  height: 30vh;
+}
+@media screen and (max-width: 400px) {
+  .form {
+    width: 300px;
+  }
+}
+.errorMessage {
+  color: var(--errorColor);
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+}
+.successMessage {
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  color: var(--successColor);
+}
+.accountSubText a,
+.passwordSubText a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+.accountSubText,
+.passwordSubText {
+  margin: 2rem 0;
+  text-align: center;
+}
+/* buttons */
+.btn {
+  color: var(--white);
+  border: none;
+  border-radius: 10rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.lPad {
+  background-color: var(--primaryColor);
+  padding: 0.75rem 1.5rem;
+}
+.btn-with-icon {
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  background-color: var(--primaryColor);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-with-icon img {
+  width: 20px;
+  margin-left: 1rem;
+}
+.btn-without-icon {
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  background-color: var(--primaryColor);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-block {
+  width: 100%;
+}
+.icon-btn {
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+}
